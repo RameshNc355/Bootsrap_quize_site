@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<script src="js/bootstrap.js"></script>
+<script src="js/modal.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>`
+
+
+<style type="text/css">
+  body{
+    background-color: #f2f2f2;
+  }
+  .question{
+    color: blue;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .options{
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .result{
+    color:orange;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+
+  .header{
+    background-color: #ff0040;
+    height: 50px;
+  }
+
+  .mbody{
+    background-color: #00ff40;
+  }
+
+  .mfooter{
+    background-color: #00bfff;
+  }
+
+  .radio{
+    padding-top: 7px;
+  }
+</style>
+
+
+</head>
+<body bgcolor="#a65959">
+<!--model box -->
+
+<div id="myModal" class="modal" id="myModal">
+  <div class="modal-header header">
+    <center><h2><b>Welcom in Quiz!!<b></h2></center>
+  </div>
+  <div class="modal-body mbody">
+
+      <div id="QuizContainer" class="container">
+
+      <div id="Question" class="question"></div>
+
+      <hr>
+
+      <form>
+    <div class="radio">
+      <label><input type="radio" name="option" value="1"/><span class="options" id="opt1"></span></label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="option" value="2"/><span class="options" id="opt2"></span></label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="option" value="3"/><span class="options" id="opt3"></span></label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="option" value="4"/><span class="options" id="opt4"></span></label>
+    </div>
+      </form>
+    </div>
+
+  <div id="result" class = "result"></div>
+  </div>
+  <div class="modal-footer mfooter">
+        
+        <button id="nextButton" type="submit" class="next-btn btn btn-success" onclick="loadNextQuestion();">Next Question</button>
+  </div>
+</div>
+
+
+<script type="text/javascript" src = "quize.js"></script>
+<script type="text/javascript" src = "quiz_script.js"></script>
+
+
+</body>
+</html>

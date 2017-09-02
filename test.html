@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+<!--carousel -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.carousel').carousel({
+		
+		iterval:1000});
+	});
+</script>
+</head>
+<body>
+    <!--simple form-->
+	<form class="well">
+		<label>User name:</label>
+		<input type="text" class="span3" placeholder="type User Name...."/>
+		<label>Password:</label>
+		<input type="text" class="span3" placeholder="type Password..."/></br>
+		<button class="btn btn-primary">Submit</button>
+		<button class="btn">Clear</button>
+	</form></br>
+	
+	<!--inline form-->
+	<form class="well form-inline">
+		<label>User name:</label>
+		<input type="text" class="span3" placeholder="type User Name...."/>
+		<label>Password:</label>
+		<input type="text" class="span3" placeholder="type Password..."/>
+		<button class="btn btn-primary">Submit</button>
+		<button class="btn">Clear</button>
+	</form></br>
+	
+	<!--search form-->
+	<form class="well form-search">
+		<input type="text" class="span3 search-query" placeholder="search...."/>
+		<button class="btn">Search</button>
+	</form></br>
+	
+	
+	<!--table-->
+	<table class="table table-striped">
+		<thead>
+		<tr>
+			<th>Name</Th>
+			<th>Usn</Th>
+			<th>Address</Th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<td>Ram</Td>
+			<td>001</Td>
+			<td>Bangalore</Td>
+		</tr>
+		
+		<tr>
+			<td>Hari</Td>
+			<td>002</Td>
+			<td>mumbai</Td>
+		</tr>
+		</tbody>
+	</table></br>
+	
+	<!-- navigation bar-->
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Contact</a></li>
+		
+	</ul></br>
+
+	
+		<ul class="nav nav-pills">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Contact</a></li>
+	     </ul></br>
+	
+		<ul class="nav nav-tabs nav-stacked">
+		<li><a href="#"><i class="icon-home icon-black"></i>Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Contact</a></li>
+		</ul></br>
+		
+		<!-- buttons -->
+		
+		<div class="well">
+			<button class="btn btn-danger"><i class="icon-trash icon-white"></i>Delete</button>
+			<button class="btn"><i class="icon-comment icon-green"></i>Comment</button>
+			<button class="btn"><i class="icon-refresh icon-blue"></i>Refresh</button>
+			
+		</div></br>
+		
+		
+		<!--popover -->
+		
+		<p>popover</p>
+		<a href="#" id="example" class="btn btn-primary" rel="popover" data-content="this is the body of popover" data-original-title="creativity">popover</a>
+		</br></br>
+		
+		
+		<!--  carousel (image slide) -->
+		
+		<div class="container">
+			<div class="row">
+				<div class="well">
+					<div id="mycarousel" class="carousel">
+						<div class="carousel-inner">
+							<center>
+							<div class="item active"><img src="img/1.jpg" height="300" width="300"></div>
+							<div class="item"><img src="img/2.jpg" height="300" width="300"></div>
+							<div class="item"><img src="img/3.jpg" height="300" width="300"></div>
+							<div class="item"><img src="img/4.jpg" height="300" width="300"></div>
+							</center>
+						</div>
+						<a class="carousel-control left" href="#mycarousel" data-slide="prev">&lsaquo;</a>
+						<a class="carousel-control right" href="#mycarousel" data-slide="next">&rsaquo;</a>
+						
+					</div>
+				</div>
+				</br></br>
+				
+				
+
+		
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>`	
+<script src="js/bootstrap.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/carousel.js"></script>
+
+
+<!--  for popover -->
+<script>
+	$(function(){
+	$('#example').popover();
+	});
+</script>
+
+</body>
+</html>
